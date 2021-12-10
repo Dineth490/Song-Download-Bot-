@@ -11,7 +11,7 @@ Telegram-Music-Download-Bot can Download Your MP3 Songs in Second
 ### Deploy to Heroku 🏃‍♂
 
 The easiest way to deploy this Song Bot  <br><br>
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/sanila2007/Song-Download-Bot-)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Dineth490/Song-Download-Bot-)
   
  ## How to use the bot
  
