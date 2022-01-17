@@ -11,6 +11,14 @@ from pyrogram import filters, Client
 from youtube_search import YoutubeSearch
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputTextMessageContent
 
+FEEDBACK_MESSAGE = [
+        [   
+            InlineKeyboardButton("Report here", url="https://t.me/sanilaassistant_bot")
+        ]
+]
+
+
+
 def time_to_seconds(time):
     stringt = str(time)
     return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(':'))))
@@ -63,6 +71,13 @@ def song(client, message):
         m.delete()
     except Exception as e:
         m.edit('❌ Error\nReport this problem👇\n@sanilaassistant_bot')
+        reply_markup = InlineKeyboardMarkup(FEEDBACK_MESSAGE)
+        message.reply(
+            text=text,
+            reply_markup=reply_markup,
+            disable_web_page_preview=True
+        )
+            
         print(e)
 
     try:
